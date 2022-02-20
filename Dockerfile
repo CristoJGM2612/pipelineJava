@@ -3,7 +3,7 @@ LABEL maintainer="cristo@iespuerto.es"
 
 ARG WAR_FILE=target/*.war
 
-ADD ${ARG} /usr/local/tomcat/webapps/
+ADD ${WAR_FILE}} /usr/local/tomcat/webapps/
 
 EXPOSE 8091
 CMD [ "catalina.sh", "run" ]
