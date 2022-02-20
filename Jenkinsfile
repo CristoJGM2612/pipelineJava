@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'docker build -t app-web-demo .'
-                sh 'docker run -d -p 8091:8080 hello-word-java-apache-tomcat '
+                sh 'docker run -d -p 8091:8080 app-web-demo '
             }
         }
         stage('Test Integration') {
